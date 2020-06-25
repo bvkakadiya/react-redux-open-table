@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Global Styles */
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(233, 232, 232);
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+table th {
+  background: var(--light-color);
+}
+
+nav.navbar h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  padding: 5px;
+  margin: 6px 20px 13px 20px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+}
+
+tr {
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+tr:hover {
+  background: rgba(255, 196, 0, 0.541);
+}
+
+tr:nth-child(odd):hover {
+  background: rgb(187, 128, 255) !important;
+}
+
+input[type="text"] {
+  display: block;
+  width: 90%;
+  padding: 0.4rem;
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  width: 50%;
+  justify-content: left;
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  /* font: inherit; */
+}
+
+table th,
+table td {
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  text-align: left;
+}
+
+table th {
+  background: var(--light-color);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Center All */
+.all-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--primary-color);
+  background-clip: border-box;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.alert {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+.btn-primary,
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark {
+  text-align: center;
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.bg-light {
+  border: #ccc solid 1px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-grid {
+  width: 60%;
+  /* height: auto; */
+  height: 100vh;
+  overflow: auto;
+  float: right;
+  margin-bottom: -50px;
+  min-height: 100%;
+  background-color: rgb(167, 242, 245);
+}
+
+.search-container {
+  width: 25%;
+
+  height: 100%;
+  position: relative;
+  margin-left: 0.5rem;
+  float: left;
+  background-color: rgb(247, 239, 170);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  opacity: 0.9;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+  height: 100px;
+  background-color: #4da6ff;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .restaurant-grid {
+    margin-top: 2rem;
+    width: 100vh;
+    height: 100vh;
+    overflow: auto;
+    float: inherit;
+    background-color: rgb(167, 242, 245);
+  }
+
+  .search-container {
+    width: 100vh;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: rgb(247, 239, 170);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .restaurant-grid {
+    margin-top: 2rem;
+    width: 100vh;
+    height: 100vh;
+    overflow: auto;
+    float: right;
+    background-color: rgb(167, 242, 245);
+  }
+
+  .search-container {
+    width: 100vh;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    float: left;
+    background-color: rgb(247, 239, 170);
+  }
+}

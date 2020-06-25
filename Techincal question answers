@@ -1,0 +1,25 @@
+1) I have spend about 4 hours to complete the coding test. If I had more time I would like complete validation unit test and more functionality.
+
+2) For every component I have used Function component and Hooks which you can see on different component;
+
+3) I would find the issue by debugging, And Create Profile for page then analyze that page using dev tools
+
+4) I would improve the API that i used in my test by making sure all the data is showing correctly if not redirect the user to the choose another restaurant. For example: Some of the URL links to the open table app were throwing error.
+5)  {  
+   "name":"Bhaveshkumar",
+   "age":26,
+   "lastName":"Kakadiya",
+   "Experience":"4 years",
+   "livening":"Toronto",
+   "passions":[  
+      "Chess",
+      "Programming"
+   ],
+   "interests":[  
+      "React",
+      "Node",
+      "Angular"
+      "Machine Learning"
+   ],
+
+}
